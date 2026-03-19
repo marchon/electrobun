@@ -1,0 +1,25 @@
+# Sphinx documentation build output
+build/
+_build/
+*.pyc
+*.pyo
+__pycache__/
+
+# Virtual environment
+env/
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# PDF output (for now)
+*.pdf

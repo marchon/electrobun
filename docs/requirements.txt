@@ -1,0 +1,41 @@
+# Sphinx Documentation Requirements
+
+# Core Sphinx
+sphinx>=7.0.0
+sphinx-rtd-theme>=2.0.0
+sphinx-autobuild>=2024.0.0
+
+# Markdown support
+myst-parser>=3.0.0
+
+# TypeScript/JavaScript documentation
+sphinx-js>=4.0.0
+
+# Required by sphinx-js (install globally or in project)
+# npm install -g typedoc
+# Or: bun add -d typedoc
+
+# API documentation
+sphinx-autodoc-typehints>=2.0.0
+
+# Search improvements
+sphinx-copybutton>=0.5.0
+sphinx-togglebutton>=0.3.0
+
+# Diagram support
+sphinxcontrib-mermaid>=0.9.0
+
+# Versioning
+sphinx-multiversion>=0.2.0
+
+# Link checking
+# Built into sphinx: sphinx-build -b linkcheck
+
+# Performance
+# Note: Install manually if needed: pip install sphinxcontrib-svg2pdfconverter
+
+# Optional - PDF generation
+# Install manually if needed: pip install sphinxcontrib-weasyprint
+
+# Linting
+rstcheck>=6.2.0
