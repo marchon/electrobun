@@ -168,6 +168,50 @@ mermaid_version = 'latest'
 mermaid_output_format = 'raw'
 mermaid_params = []
 
+# -- Options for LaTeX/PDF output --------------------------------------------
+latex_engine = 'pdflatex'
+latex_documents = [
+    (
+        master_doc,           # source start file
+        'electrobun.tex',     # target name
+        'Electrobun Documentation',  # title
+        'Electrobun Team',    # author
+        'manual',             # documentclass
+    ),
+]
+
+latex_logo = ''
+latex_toplevel_sectioning = 'chapter'
+latex_show_urls = 'footnote'
+latex_show_pagerefs = True
+
+# LaTeX paper size
+latex_paper_size = 'letter'
+
+# LaTeX font size
+latex_font_size = '10pt'
+
+# Additional LaTeX packages
+latex_elements = {
+    'papersize': 'letterpaper',
+    'pointsize': '10pt',
+    'preamble': r'''
+        % Custom preamble
+        \usepackage{charter}
+        \usepackage[defaultsans]{lato}
+        \usepackage{inconsolata}
+        \usepackage{microtype}
+        \usepackage{graphicx}
+        \usepackage{longtable}
+        \usepackage{booktabs}
+        \usepackage{sphinx}
+        \setcounter{tocdepth}{2}
+        \setcounter{secnumdepth}{3}
+    ''',
+    'figure_align': 'htbp',
+    'extraclassoptions': 'openany,oneside',
+}
+
 # -- Custom setup ------------------------------------------------------------
 def setup(app):
     app.add_config_value('recommonmark_config', {

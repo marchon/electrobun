@@ -21,5 +21,6 @@ ENV/
 .DS_Store
 Thumbs.db
 
-# PDF output (for now)
-*.pdf
+# PDF source files (not build output)
+/source/*.pdf
+*.pdf~
